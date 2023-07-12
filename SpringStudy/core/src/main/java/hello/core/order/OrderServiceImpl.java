@@ -12,7 +12,7 @@ public class OrderServiceImpl implements OrderService{
     private final MemberRepository memberRepository = new MemoryMemberRepository();
 //    private final DiscountPolicy discountPolicy = new FixDiscountPolicy();
 
-    //서비스단에서 직접 바꿔야함.... 이딴게 SOLID...? 이딴게 OCP...? 이딴게 DIP...?
+    //서비스단에서 직접 바꿔야함.... 이딴게 SOLID...? 이딴게 OCP...? 이딴게 DIP...??
     private final DiscountPolicy discountPolicy = new RateDiscountPolicy();
 
     @Override
